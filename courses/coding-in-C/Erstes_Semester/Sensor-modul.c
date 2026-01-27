@@ -9,11 +9,11 @@ int main()
     {
         printf("Es liegt ein Fehler vor.\n");
     }
-    else if ((status & 0x40) == 0x40)
+    if ((status & 0x40) == 0x40)
     {
         printf("Es liegt eine Übertemperatur vor.\n");
     }
-    else if ((status & 0x20) == 0x20)
+    if ((status & 0x20) == 0x20)
     {
         printf("Es liegt eine Unterspannung vor.\n");
     }
