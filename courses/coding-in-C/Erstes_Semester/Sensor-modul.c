@@ -11,7 +11,7 @@ int main()
     }
     if ((status & 0x40) == 0x40)
     {
-        printf("Es liegt eine Übertemperatur vor.\n");
+        printf("Es liegt eine Uebertemperatur vor.\n");
     }
     if ((status & 0x20) == 0x20)
     {
@@ -20,7 +20,7 @@ int main()
     
     
     sum = status & 0x0F;
-    printf("Ihr Messwert beträgt: %d", sum);
+    printf("Ihr Messwert betraegt: %d", sum);
     
     return 0;
 }
