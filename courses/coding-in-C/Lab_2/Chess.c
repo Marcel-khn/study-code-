@@ -2,9 +2,10 @@
 
 int main()
 {
-    int Zahl[8] = {1, 2, 3, 4, 5, 6, 7, 8};
-    char Wort[8] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'};
-    char Belegt[3][5] = {"   ", "###", "|"};
+    int const Board_size = 8;
+    int Zahl[Board_size] = {1, 2, 3, 4, 5, 6, 7, 8};
+    char Wort[Board_size] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'};
+    char Belegt[3][4] = {"   ", "###", "|"};
     char Zeichen[2][4] = {"+", "---"};
     int f = 7;
 
@@ -14,7 +15,7 @@ int main()
         if (i == 18 || i == 0)
         {
             printf("     ");
-            for(int a = 0; a < 8; a++)
+            for(int a = 0; a < Board_size; a++)
             {
                 printf("%c   ", Wort[a]);
             }
@@ -23,7 +24,7 @@ int main()
         else if (i % 2 == 1)
         {
             printf("   ");
-            for(int a = 0; a<=16; a++)
+            for(int a = 0; a<=Board_size*2; a++)
             {
                 if(a % 2 == 0 || a == 0)
                 {
