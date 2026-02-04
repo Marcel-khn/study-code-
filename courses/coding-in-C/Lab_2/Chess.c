@@ -3,11 +3,10 @@
 int main()
 {
     int const Board_size = 8;
-    int Zahl[Board_size] = {1, 2, 3, 4, 5, 6, 7, 8};
     char Wort[Board_size] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'};
     char Belegt[3][4] = {"   ", "###", "|"};
     char Zeichen[2][4] = {"+", "---"};
-    int f = 7;
+    int f = Board_size;
 
     for(int i = 18; i >= 0; i--)
     {
@@ -45,11 +44,11 @@ int main()
             {
                 if (a == 0)
                 {
-                    printf(" %d ", Zahl[f]);
+                    printf(" %d ", f);
                 }
                 else if (a == 9)
                 {
-                    printf ("| %d", Zahl[f]);
+                    printf ("| %d", f);
                 }
                 else if (f % 2 == 0)
                 {
