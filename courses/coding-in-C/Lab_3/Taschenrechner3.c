@@ -11,9 +11,6 @@ char r;  //Rechenoperation
 
 int main()
 {
-    
-
-
     printf("\nWilkommen bei ihrem Persönlichen Taschenrechner. \nGeben sie Ihre erste Zahl an: ");
     scanf("%f", &x);
 
