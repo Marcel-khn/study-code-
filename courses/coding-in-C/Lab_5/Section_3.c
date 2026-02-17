@@ -103,7 +103,7 @@ void col(int *p1, int *p2, int l)
 {
    if (*p2 == 1) {
     *p2 = 0; 
-    printf("Collision at index %d\n", l);
+    printf("Collision on index %d\n", l);
 } else {
     *p2 = 1; 
 }
