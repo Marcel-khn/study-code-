@@ -17,10 +17,10 @@ int main(void) {
 
 /*
     x = int
-    p = int 
-    p* = int pointer 
-    pp = int 
+    p = int pointer 
+    p* = int  
+    pp = int pointer pointer 
     *pp = int pointer 
-    **pp = int pointer pointer 
+    **pp = int  
 
 */
