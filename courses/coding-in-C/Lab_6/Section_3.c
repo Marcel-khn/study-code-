@@ -128,11 +128,11 @@ int main()
     }
     for (int k = 0; k < 3000; k++)
     {
-        if (s2.object_detection[k]< 56)
+        if (s2.object_detection[k]< 55)
         {
             s2.object_detection[k] = 0;
         }
-        else if (s2.object_detection[k] >= 56)
+        else if (s2.object_detection[k] >= 55)
         {
             s2.object_detection[k] = 1;
         }
