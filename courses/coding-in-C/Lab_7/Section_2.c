@@ -8,7 +8,7 @@ typedef struct Node {
 }Node;
 
 void insertAfter(Node* pNode, Node* pNewNode, double *data);
-void create(Node* pNode, int value);
+void create(Node* pNode, Node *pHead, int value);
 
 int main()
 {
@@ -27,14 +27,24 @@ int main()
 
 struct Node *pHead = NULL;
 
-void create(Node *pNode, int value)
+void create(Node *pNode, Node *pHead, int value)
 {
-    if (pNode == NULL)
+    Node* pNewNode;
+    if (pHead == NULL)
     {
+        pHead->data = value;
+        pHead->pNext = NULL;
+    }
+    else 
+    {
+        while (pNode != NULL)
+        {
+            pNewNode->pNext = pNode->pNext;
+            pNode->pNext = pNewNode;
+        }
         
     }
-    pNode->data = value;
-    pNode->pNext = NULL;
+    
 }
 void insertAfter(Node* pNode, Node* pNewNode, double *data)
 {
