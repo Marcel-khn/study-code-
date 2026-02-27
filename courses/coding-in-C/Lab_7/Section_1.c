@@ -48,4 +48,6 @@ int main()
 
     free(ptr1);
     free(NNN);
+
+    return 0;
 }
